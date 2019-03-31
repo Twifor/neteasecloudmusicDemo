@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/bc"
+>
+    <include layout="@layout/layout_title"></include>
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/arq"
+        />
+        <EditText
+                android:id="@+id/phoneNumEDT"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:inputType="phone"
+                android:hint="Mobile number"
+                android:theme="@style/EditTextStyle"
+        />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+    >
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ars"
+        />
+        <EditText
+                android:id="@+id/pwdEDT"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:theme="@style/EditTextStyle"
+        />
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/login_btn_main"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="Login"
+            android:textSize="18sp"
+            android:textColor="@drawable/btn_click_text"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:layout_width="320dp"/>
+</LinearLayout>
