@@ -1,6 +1,8 @@
 package com.example.neteasecloudmusic.network
 
 import com.example.neteasecloudmusic.network.login.LoginDataBean
+import com.example.neteasecloudmusic.network.login.UserDetailBean
+import com.example.neteasecloudmusic.network.mixs.MixDataBean
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.GET
@@ -13,6 +15,12 @@ interface MainService {
 
     @GET("/logout")
     fun logout(): Call<ResponseBody>
+
+    @GET("/user/playlist?")
+    fun getMixesData(@Query("uid") uid: Int?): Call<MixDataBean>
+
+    @GET("/user/detail?")
+    fun getUserDetail(@Query("uid") uid: Int?): Call<UserDetailBean>
 
     companion object : MainService by ServiceFactory()
 }

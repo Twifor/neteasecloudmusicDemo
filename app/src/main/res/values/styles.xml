@@ -24,4 +24,7 @@
         <item name="android:windowEnterAnimation">@anim/anim_pop_in</item>
         <item name="android:windowExitAnimation">@anim/anim_pop_out</item>
     </style>
+    <style name="TabLayoutStyle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
 </resources>

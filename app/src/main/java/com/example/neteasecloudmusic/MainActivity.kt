@@ -7,13 +7,13 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.WindowManager
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.PopupWindow
-import android.widget.TextView
+import android.widget.*
 import com.bumptech.glide.Glide
 import com.example.neteasecloudmusic.common.DialogCenter
+import com.example.neteasecloudmusic.common.SharedCenter
+import com.example.neteasecloudmusic.common.Status
 import com.example.neteasecloudmusic.network.login.LoginFactory
+import com.example.neteasecloudmusic.network.login.UserDetailFactory
 import kotlinx.android.synthetic.main.layout_main_title.*
 import org.jetbrains.anko.dip
 import org.jetbrains.anko.startActivity
@@ -68,6 +68,12 @@ class MainActivity : AppCompatActivity() {
         share = getSharedPreferences("data", Context.MODE_PRIVATE)
         menu_btn.setOnClickListener {
             makePopupWindow()
+        }
+        UserDetailFactory.getUserDetail(share?.getInt("id", 0)) { status, data ->
+            when (status) {
+                Status.UNK -> Toast.makeText(this, "Get detail error", Toast.LENGTH_SHORT).show()
+                Status.OK -> SharedCenter.updateUserDetail(getSharedPreferences("data", Context.MODE_PRIVATE), data)
+            }
         }
     }
 }

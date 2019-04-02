@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/black">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Personal info"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+    />
+    <TextView
+            android:id="@+id/level"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/dark_white"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:text="Name: 5"
+    />
+    <TextView
+            android:id="@+id/gender"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/dark_white"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:text="Gender: Male"
+    />
+    <TextView
+            android:id="@+id/region"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/dark_white"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:text="Region: 山东省　泰安市"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Profile"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+    />
+    <TextView
+            android:id="@+id/profile"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/dark_white"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:text="XD"
+    />
+</LinearLayout>

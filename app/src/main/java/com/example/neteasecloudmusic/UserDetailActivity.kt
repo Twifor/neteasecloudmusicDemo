@@ -5,7 +5,10 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
+import android.widget.RelativeLayout
 import com.example.neteasecloudmusic.common.withItems
+import com.example.neteasecloudmusic.view.userMixItem
 import com.example.neteasecloudmusic.view.userItem
 import kotlinx.android.synthetic.main.user_detail_main_layout.*
 
@@ -27,6 +30,7 @@ class UserDetailActivity : AppCompatActivity() {
                 share?.getString("background_url", "233"),
                 share?.getString("nickname", "ERR")
             )
+            userMixItem(supportFragmentManager)
         }
     }
 }

@@ -1,15 +1,9 @@
 package com.example.neteasecloudmusic
 
-import android.app.ActivityOptions
 import android.content.Context
-import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.transition.Slide
-import android.transition.TransitionInflater
+import android.support.v7.app.AppCompatActivity
 import android.view.View
-import android.view.Window
-import android.view.WindowManager
 import android.widget.Toast
 import com.example.neteasecloudmusic.common.SharedCenter
 import com.example.neteasecloudmusic.common.Status

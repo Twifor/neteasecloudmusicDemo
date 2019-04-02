@@ -10,7 +10,7 @@ object ServiceFactory {
     private const val BASE_URL = "http://192.168.43.15:3000"
     private val client = OkHttpClient
         .Builder()
-        .connectTimeout(5, TimeUnit.SECONDS)
+        .connectTimeout(2, TimeUnit.SECONDS)
         .build()
     val retrofit: Retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
