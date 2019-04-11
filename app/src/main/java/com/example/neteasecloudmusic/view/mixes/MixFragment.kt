@@ -58,7 +58,6 @@ class MixFragment : Fragment() {
                         l.add(InfoItem("Fav Mixes"))
                         for (i in data.playlist!!) {
                             if (i.creator?.userId != share?.getInt("id", 0)) {
-                                Log.d("FUCK", i.subscribed.toString())
                                 l.add(
                                     MixItem(
                                         context,

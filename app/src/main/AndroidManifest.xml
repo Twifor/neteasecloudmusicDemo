@@ -23,6 +23,10 @@
                   android:theme="@style/NormalTheme"></activity>
         <activity android:name=".UserDetailActivity"
                   android:theme="@style/NormalTheme"></activity>
+        <activity android:name=".MixMainActivity"
+                  android:theme="@style/NormalTheme"></activity>
+        <activity android:name=".MusicPlayActivity" >
+        </activity>
     </application>
 
 </manifest>

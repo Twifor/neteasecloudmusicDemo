@@ -19,4 +19,20 @@ object MixDataFactory {
             }
         }.start()
     }
+
+    fun getMixDetail(id: Int, back: (Status, MixDetailBean?) -> (Unit)) {
+        val call = MainService.getMixDetail(id)
+        object : Thread() {
+            override fun run() {
+                try {
+                    val mixDetailBean = call.execute().body()
+                    if (mixDetailBean == null) back(Status.UNK, mixDetailBean)
+                    else back(Status.OK, mixDetailBean)
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                    back(Status.INV, null)
+                }
+            }
+        }.start()
+    }
 }
