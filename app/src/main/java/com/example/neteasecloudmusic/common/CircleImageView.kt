@@ -2,11 +2,10 @@ package com.example.neteasecloudmusic.common
 
 import android.content.Context
 import android.graphics.*
-import android.support.v7.widget.AppCompatImageView
-import android.util.AttributeSet
 import android.graphics.drawable.BitmapDrawable
 import android.support.annotation.Nullable
-import android.util.Log
+import android.support.v7.widget.AppCompatImageView
+import android.util.AttributeSet
 
 
 class CircleImageView @JvmOverloads constructor(
