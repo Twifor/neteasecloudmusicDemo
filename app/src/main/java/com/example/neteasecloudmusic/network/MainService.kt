@@ -11,6 +11,7 @@ import com.example.neteasecloudmusic.network.music.MusicUrlBean
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.GET
+import retrofit2.http.Headers
 import retrofit2.http.POST
 import retrofit2.http.Query
 
@@ -42,6 +43,10 @@ interface MainService {
 
     @GET("/comment/music?")
     fun getMusicComment(@Query("id") id: Int?, @Query("limit") limit: Int?): Call<MusicCommentDataBean>
+
+    @Headers("User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36")
+    @GET("/comment/like?")
+    fun likeComment(@Query("id") id: Int?, @Query("cid") cid: Int?, @Query("t") t: Int?, @Query("type") type: Int?): Call<Unit>
 
     companion object : MainService by ServiceFactory()
 }

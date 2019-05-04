@@ -70,7 +70,6 @@ class MusicPlayActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
                     is Status.UNK -> Toast.makeText(this, "Unknown Error", Toast.LENGTH_SHORT).show()
                     else -> {
                         Glide.with(this).load(musicDetailBean?.songs?.get(0)?.al?.picUrl).asBitmap().into(rotateView)
-                        rotateView.play()
                     }
                 }
             }
@@ -92,12 +91,12 @@ class MusicPlayActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
                                 musicUrlBean.data?.get(0)?.url,
                                 musicUrlBean.data?.get(0)?.id!!
                             )
+                            rotateView.play()
                         } else {//上一次的正在播放，直接拿来用就可以了
                             if (!MusicCenter.isPlaying) {//改一改UI
                                 play.background =
                                     this@MusicPlayActivity.resources.getDrawable(R.drawable.agr)
-                                rotateView.pause()
-                            }
+                            } else rotateView.play()
                         }
                         init()
                     }

@@ -61,4 +61,17 @@ object MusicFactory {
             }
         }.start()
     }
+
+    fun likeComment(id: Int?, cid: Int?, t: Int?, type: Int?, back: (Status) -> (Unit)) {
+        object : Thread() {
+            override fun run() {
+                try {
+                    MainService.likeComment(id, cid, t, type).execute()
+                    back(Status.OK)
+                } catch (e: Exception) {
+                    back(Status.INV)
+                }
+            }
+        }.start()
+    }
 }

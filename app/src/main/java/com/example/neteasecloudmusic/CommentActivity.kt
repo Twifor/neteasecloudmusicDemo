@@ -1,7 +1,6 @@
 package com.example.neteasecloudmusic
 
 import android.graphics.Color
-import android.os.AsyncTask
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
@@ -37,10 +36,14 @@ class CommentActivity : AppCompatActivity() {
                             list.add(
                                 CommentItem(
                                     this@CommentActivity,
+                                    id,
+                                    l.commentId,
                                     l.user?.avatarUrl,
                                     l.time,
                                     l.content,
-                                    l.user?.nickname
+                                    l.user?.nickname,
+                                    l.likedCount,
+                                    l.isLiked
                                 )
                             )
                         }
