@@ -2,8 +2,6 @@ package com.example.neteasecloudmusic.network.music
 
 import com.example.neteasecloudmusic.common.Status
 import com.example.neteasecloudmusic.network.MainService
-import kotlinx.coroutines.android.Main
-import java.lang.Exception
 
 object MusicFactory {
     fun getMusicCheck(id: Int, back: (Boolean) -> (Unit)) {
@@ -42,6 +40,21 @@ object MusicFactory {
                     val music = call.execute().body()
                     if (music == null) back(Status.UNK, null)
                     else back(Status.OK, music)
+                } catch (e: Exception) {
+                    back(Status.INV, null)
+                }
+            }
+        }.start()
+    }
+
+    fun getComment(id: Int?, limit: Int?, back: (Status, MusicCommentDataBean?) -> (Unit)) {
+        val call = MainService.getMusicComment(id, limit)
+        object : Thread() {
+            override fun run() {
+                try {
+                    val musicCommentDataBean = call.execute().body()
+                    if (musicCommentDataBean == null) back(Status.INV, null)
+                    else back(Status.OK, musicCommentDataBean)
                 } catch (e: Exception) {
                     back(Status.INV, null)
                 }

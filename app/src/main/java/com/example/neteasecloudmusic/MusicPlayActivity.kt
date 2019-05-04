@@ -1,6 +1,7 @@
 package com.example.neteasecloudmusic
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
@@ -14,6 +15,7 @@ import com.example.neteasecloudmusic.common.MusicCenter
 import com.example.neteasecloudmusic.common.Status
 import com.example.neteasecloudmusic.network.music.MusicFactory
 import kotlinx.android.synthetic.main.play_main_layout.*
+import org.jetbrains.anko.startActivity
 
 class MusicPlayActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     override fun onStopTrackingTouch(seekBar: SeekBar?) {
@@ -85,10 +87,12 @@ class MusicPlayActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
                         rotateView.pause()
                     }
                     else -> {
-                        if (MusicCenter.id != musicUrlBean?.data?.get(0)?.id!!) MusicCenter.play(
-                            musicUrlBean.data?.get(0)?.url,
-                            musicUrlBean.data?.get(0)?.id!!
-                        ) else {//上一次的正在播放，直接拿来用就可以了
+                        if (MusicCenter.id != musicUrlBean?.data?.get(0)?.id!!) {
+                            MusicCenter.play(
+                                musicUrlBean.data?.get(0)?.url,
+                                musicUrlBean.data?.get(0)?.id!!
+                            )
+                        } else {//上一次的正在播放，直接拿来用就可以了
                             if (!MusicCenter.isPlaying) {//改一改UI
                                 play.background =
                                     this@MusicPlayActivity.resources.getDrawable(R.drawable.agr)
@@ -111,6 +115,11 @@ class MusicPlayActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
                 play.background = this.resources.getDrawable(R.drawable.agq)
                 rotateView.play()
             }
+        }
+        comment_btn.setOnClickListener {
+            val intent = Intent(this, CommentActivity::class.java)
+            intent.putExtra("id", id)
+            this.startActivity(intent)
         }
         seek.setOnSeekBarChangeListener(this)
     }

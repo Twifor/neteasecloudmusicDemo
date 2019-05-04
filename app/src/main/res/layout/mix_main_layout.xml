@@ -31,10 +31,10 @@
                     android:layout_height="250dp">
                 <ImageView
                         android:id="@+id/big_cover"
-                        android:layout_height="match_parent"
+                        android:layout_height="254dp"
                         android:layout_width="match_parent"
                         android:scaleType="fitXY"
-                />
+                        tools:layout_editor_absoluteY="-4dp"/>
                 <ImageView
                         android:id="@+id/cover"
                         android:layout_height="125dp"

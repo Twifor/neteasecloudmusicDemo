@@ -33,6 +33,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="92dp"
             app:layout_constraintHorizontal_bias="0.495"/>
+    <ImageButton
+            android:id="@+id/comment_btn"
+            android:layout_height="21dp"
+            android:layout_width="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/seek"
+            android:background="@drawable/a09"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.974"/>
     <TextView
             android:id="@+id/currentTime"
             android:layout_height="21dp"
@@ -56,7 +67,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:progressDrawable="@drawable/seeker_bar"
             android:layout_marginTop="188dp"
-            />
+    />
     <TextView
             android:id="@+id/totTime"
             android:layout_height="21dp"

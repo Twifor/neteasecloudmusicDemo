@@ -25,8 +25,9 @@
                   android:theme="@style/NormalTheme"></activity>
         <activity android:name=".MixMainActivity"
                   android:theme="@style/NormalTheme"></activity>
-        <activity android:name=".MusicPlayActivity" >
-        </activity>
+        <activity android:name=".MusicPlayActivity"></activity>
+        <activity android:name=".CommentActivity"
+                  android:theme="@style/NormalTheme"></activity>
     </application>
 
 </manifest>
