@@ -10,6 +10,7 @@ import android.view.WindowManager
 import android.widget.*
 import com.bumptech.glide.Glide
 import com.example.neteasecloudmusic.common.DialogCenter
+import com.example.neteasecloudmusic.common.MusicCenter
 import com.example.neteasecloudmusic.common.SharedCenter
 import com.example.neteasecloudmusic.common.Status
 import com.example.neteasecloudmusic.network.login.LoginFactory
@@ -72,7 +73,7 @@ class MainActivity : AppCompatActivity() {
         UserDetailFactory.getUserDetail(share?.getInt("id", 0)) { status, data ->
             when (status) {
                 Status.UNK -> Toast.makeText(this, "Get detail error", Toast.LENGTH_SHORT).show()
-                Status.OK -> SharedCenter.updateUserDetail(getSharedPreferences("data", Context.MODE_PRIVATE), data)
+                Status.OK -> SharedCenter.updateUserDetail(data)
             }
         }
     }

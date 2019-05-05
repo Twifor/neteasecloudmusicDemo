@@ -8,7 +8,7 @@ import java.lang.Exception
 import java.net.SocketTimeoutException
 
 object LoginFactory {
-    fun login(phone: String, pwd: String, back: (Status, LoginDataBean?) -> (Unit)) {
+    fun login(phone: String?, pwd: String?, back: (Status, LoginDataBean?) -> (Unit)) {
         val call = MainService.getLoginStatus(phone, pwd)
         object : Thread() {
             override fun run() {

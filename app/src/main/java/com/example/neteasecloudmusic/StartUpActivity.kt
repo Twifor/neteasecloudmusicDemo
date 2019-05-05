@@ -20,18 +20,17 @@ class StartUpActivity : AppCompatActivity() {
         object : Thread() {
             override fun run() {
                 Thread.sleep(1000)
-                val share = getSharedPreferences("data", Context.MODE_PRIVATE)
-                val phone = share.getString("phoneNum", null)
-                val pwd = share.getString("pwd", null)
+                val phone = SharedCenter.getPhoneNUm()
+                val pwd = SharedCenter.getPassWord()
                 if (phone == null) startActivity<LoginActivity>()
                 else LoginFactory.login(phone, pwd) { status, data ->
                     if (status != Status.OK) {
-                        runOnUiThread{
+                        runOnUiThread {
                             Toast.makeText(this@StartUpActivity, "Error,please login again.", Toast.LENGTH_SHORT).show()
                         }
                         startActivity<LoginActivity>()
                     } else {
-                        SharedCenter.updateUserInfo(share, data!!, phone, pwd)
+                        SharedCenter.updateUserInfo(data!!, phone, pwd)
                         startActivity<MainActivity>()
                     }
                 }

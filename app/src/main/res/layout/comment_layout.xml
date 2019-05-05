@@ -2,7 +2,8 @@
 <android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
         android:background="@color/black"
         android:layout_height="wrap_content"
 >
@@ -43,10 +44,10 @@
             android:layout_width="wrap_content"
             android:textSize="10sp"
             android:text="555"
-            app:layout_constraintEnd_toStartOf="@id/likeBtn"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="4dp"/>
+            app:layout_constraintEnd_toStartOf="@id/likeBtn"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="12dp"/>
     <ImageButton
             android:id="@+id/likeBtn"
             android:layout_width="20dp"
@@ -56,8 +57,8 @@
             app:layout_constraintTop_toTopOf="parent"
             android:background="@drawable/a5x"
             app:layout_constraintBottom_toTopOf="@id/content"
-            app:layout_constraintHorizontal_bias="0.935"
-            app:layout_constraintVertical_bias="0.578"/>
+            app:layout_constraintHorizontal_bias="0.936"
+            app:layout_constraintVertical_bias="0.318"/>
     <TextView
             android:id="@+id/content"
             android:layout_width="317dp"
@@ -69,5 +70,17 @@
             android:layout_marginBottom="15dp"
             android:textColor="@color/white"
             android:text="This is a comment, it is very very long long long long long long long long long."
-            app:layout_constraintTop_toBottomOf="@id/avatar"/>
+            app:layout_constraintTop_toBottomOf="@id/avatar" app:layout_constraintHorizontal_bias="0.574"
+            app:layout_constraintVertical_bias="0.0"/>
+    <TextView
+            android:id="@+id/replyText"
+            android:layout_height="wrap_content"
+            android:layout_width="279dp"
+            android:textColor="@color/dark_white"
+            android:layout_margin="5dp"
+            android:text="HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"
+            app:layout_constraintTop_toBottomOf="@id/content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 </android.support.constraint.ConstraintLayout>

@@ -18,7 +18,7 @@ import retrofit2.http.Query
 interface MainService {
     //统一管理所有网络接口
     @GET("/login/cellphone?")
-    fun getLoginStatus(@Query("phone") phoneNum: String, @Query("password") pwd: String): Call<LoginDataBean>
+    fun getLoginStatus(@Query("phone") phoneNum: String?, @Query("password") pwd: String?): Call<LoginDataBean>
 
     @GET("/logout")
     fun logout(): Call<ResponseBody>
@@ -42,11 +42,14 @@ interface MainService {
     fun getMusicUrl(@Query("id") id: Int?): Call<MusicUrlBean>
 
     @GET("/comment/music?")
-    fun getMusicComment(@Query("id") id: Int?, @Query("limit") limit: Int?): Call<MusicCommentDataBean>
+    fun getMusicComment(@Query("id") id: Int?, @Query("limit") limit: Int?, @Query("timestamp") timestamp: Long?): Call<MusicCommentDataBean>
 
-    @Headers("User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36")
     @GET("/comment/like?")
-    fun likeComment(@Query("id") id: Int?, @Query("cid") cid: Int?, @Query("t") t: Int?, @Query("type") type: Int?): Call<Unit>
+    fun likeComment(
+        @Query("id") id: Int?, @Query("cid") cid: Int?, @Query("t") t: Int?, @Query("type") type: Int?, @Query(
+            "timestamp"
+        ) timestamp: Long?
+    ): Call<Unit>
 
     companion object : MainService by ServiceFactory()
 }

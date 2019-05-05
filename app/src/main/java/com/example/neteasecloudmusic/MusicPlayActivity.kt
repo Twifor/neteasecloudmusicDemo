@@ -2,7 +2,9 @@ package com.example.neteasecloudmusic
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.graphics.Bitmap
 import android.graphics.Color
+import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
 import android.os.Handler
 import android.os.HandlerThread
@@ -11,6 +13,9 @@ import android.view.View
 import android.widget.SeekBar
 import android.widget.Toast
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.animation.GlideAnimation
+import com.bumptech.glide.request.target.SimpleTarget
+import com.example.neteasecloudmusic.common.ImageFilter
 import com.example.neteasecloudmusic.common.MusicCenter
 import com.example.neteasecloudmusic.common.Status
 import com.example.neteasecloudmusic.network.music.MusicFactory
@@ -53,6 +58,21 @@ class MusicPlayActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         handler!!.post(runnable)
     }
 
+//    private fun getBitmap(bitmap: Bitmap, i: Int): Bitmap {//递归强行高斯模糊，已弃用
+//        if (i == 0) return bitmap
+//        return getBitmap(
+//            ImageFilter.rsBlur(
+//                this,
+//                ImageFilter.rsBlur(
+//                    this,
+//                    ImageFilter.rGB565toARGB888(bitmap),
+//                    25f
+//                ),
+//                25f
+//            ), i - 1
+//        )
+//    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -70,6 +90,17 @@ class MusicPlayActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
                     is Status.UNK -> Toast.makeText(this, "Unknown Error", Toast.LENGTH_SHORT).show()
                     else -> {
                         Glide.with(this).load(musicDetailBean?.songs?.get(0)?.al?.picUrl).asBitmap().into(rotateView)
+//                        Glide.with(this).load(musicDetailBean?.songs?.get(0)?.al?.picUrl).asBitmap()
+//                            .into(object : SimpleTarget<Bitmap>() {
+//                                override fun onResourceReady(
+//                                    resource: Bitmap?,
+//                                    glideAnimation: GlideAnimation<in Bitmap>?
+//                                ) {
+//                                    if (resource == null) return
+//                                    rotateView.setImageBitmap(resource)
+//                                    bg.background = BitmapDrawable(getBitmap(resource, 8))
+//                                }
+//                            })
                     }
                 }
             }

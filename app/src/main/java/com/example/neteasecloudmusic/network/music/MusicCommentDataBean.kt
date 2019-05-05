@@ -1,23 +1,32 @@
 package com.example.neteasecloudmusic.network.music
 
-import com.google.gson.annotations.SerializedName
-
 class MusicCommentDataBean {
-    @SerializedName("isMusician")
-    var `is_$IsMusician227`: Boolean = false
+    /**
+     * isMusician : false
+     * userId : 382120074
+     * topComments : []
+     * moreHot : true
+     * hotComments : [{"user":{"locationInfo":null,"vipType":0,"nickname":"不陈不冠希丶","userType":0,"vipRights":null,"userId":40596775,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/NkX_mKmYLgTSfHtuEcdP7w==/109951163409710004.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"DaphneOdera","userType":0,"vipRights":null,"userId":38192684,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/0ZCGMKLU0CaIzQ6RGhyjog==/3249056860520639.jpg","experts":null,"remarkName":null},"beRepliedCommentId":17891101,"content":"春天里，两只小熊在山坡上滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去。。。~\\(≧▽≦)/~","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":null,"repliedMark":false,"liked":false,"commentId":30782208,"likedCount":30822,"expressionUrl":null,"time":1439372569360,"content":"然后有个光头来骚扰他们了"},{"user":{"locationInfo":null,"vipType":0,"nickname":"前路看近行远","userType":0,"vipRights":null,"userId":43113593,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/SkztKLw-CGUI1Lcz0lP3KA==/109951163706744411.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":null,"repliedMark":false,"liked":false,"commentId":135554736,"likedCount":20670,"expressionUrl":null,"time":1459254165188,"content":"我怎么遇上了一群当面说我的歌真难听，却背后偷偷在我电脑上找歌名的室友。。。。。。"},{"user":{"locationInfo":null,"vipType":10,"nickname":"听声写意","userType":0,"vipRights":{"associator":null,"musicPackage":{"vipCode":220,"rights":true},"redVipAnnualCount":-1},"userId":12543358,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/_UkuSkKLNPZ3Gy_id63bKA==/5931865232194523.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":null,"repliedMark":false,"liked":true,"commentId":6260228,"likedCount":14896,"expressionUrl":null,"time":1416845530259,"content":"恰似惊鸿一瞥，枯枝生绿叶，绿叶开红花；隔人海相望，也是一瞬之间，眨眼再无见。"},{"user":{"locationInfo":null,"vipType":0,"nickname":"皮娃娃","userType":0,"vipRights":null,"userId":3679235,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/pXY-OsgejblTyxRgjttxqA==/109951162793795494.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":null,"repliedMark":false,"liked":false,"commentId":6806591,"likedCount":11943,"expressionUrl":null,"time":1417957372071,"content":"如果你不快乐，那就出去走走，世界这么大。风景很美、机会很多、人生很短，不要蜷缩在一处阴影中。"},{"user":{"locationInfo":null,"vipType":0,"nickname":"一生只坚持一件事的Su","userType":0,"vipRights":null,"userId":45375774,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/U-MV4bAt0hEKk_vOsyWejA==/109951163768857830.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":null,"repliedMark":false,"liked":false,"commentId":6937603,"likedCount":6247,"expressionUrl":null,"time":1418223283733,"content":"不去想那些翻唱的歌，只是单纯地听着这段旋律，那是春天，繁木秀荫，花草萋萋，你躺着阳光下，浑身缭绕着翻腾不息的温暖\u2026\u2026"},{"user":{"locationInfo":null,"vipType":0,"nickname":"zekyy","userType":0,"vipRights":null,"userId":39951650,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/gZmeSNp1Ir2D5SpTx5V0Uw==/18753270325515346.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":null,"repliedMark":false,"liked":false,"commentId":6943741,"likedCount":6113,"expressionUrl":null,"time":1418225129527,"content":"还好遇上了网易云。。"},{"user":{"locationInfo":null,"vipType":0,"nickname":"C殿下","userType":0,"vipRights":null,"userId":35225121,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/QU4LccgHPvCErRb2wEGk8g==/6669637534568369.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"CKJ丷丷","userType":0,"vipRights":null,"userId":61857214,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/5OMUQ9XM5-D-aMm9y5cObg==/18571850906497201.jpg","experts":null,"remarkName":null},"beRepliedCommentId":21337412,"content":"我听这么屌的歌可惜就是没有男朋友、","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":null,"repliedMark":false,"liked":false,"commentId":151436998,"likedCount":5195,"expressionUrl":null,"time":1462691968353,"content":"尼玛！你是男的啊！！是男的啊！！！！！！！"},{"user":{"locationInfo":null,"vipType":0,"nickname":"三顺呐三顺","userType":0,"vipRights":null,"userId":34022218,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/0AHgEPQYfIIOAu11m9MLOA==/7777945255400670.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":null,"repliedMark":false,"liked":false,"commentId":6931435,"likedCount":4681,"expressionUrl":null,"time":1418209317438,"content":"即便在最艰难的时刻。你更要竭尽全力的生活。人生没有容易二字，不要辜负你的苦难。"},{"user":{"locationInfo":null,"vipType":11,"nickname":"AvonFar","userType":0,"vipRights":{"associator":{"vipCode":100,"rights":true},"musicPackage":null,"redVipAnnualCount":-1},"userId":268690669,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/RRjruFza5qAdspSQrMIjKA==/109951163979390453.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"零小瑢","userType":4,"vipRights":null,"userId":290658615,"expertTags":null,"authStatus":1,"avatarUrl":"https://p4.music.126.net/439nwwPOvGpgcvycRFDUUw==/109951163215459535.jpg","experts":null,"remarkName":null},"beRepliedCommentId":261633809,"content":"我们生活在同一个地球，但是我们的纬度不同。你在北方望雪，我在南国踏青。我们身处不同的世界，你有你的冰清玉洁，我有我的馥郁芳香。你细嗅初雪，我踏碎晚霞。我们就像两条平行线，永远不会相交。可是，我们却朝着同一个方向前进。","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":null,"repliedMark":false,"liked":false,"commentId":269593659,"likedCount":4516,"expressionUrl":null,"time":1482246909531,"content":"在平面几何，指按照欧几里得的《几何原本》构造的几何学，也称欧几里得几何里，两条平行线永远不可能相交。但在双曲几何，也称罗巴切夫斯基几何，波利亚-罗巴切夫斯基几何或罗氏几何，是一种独立于欧几里得几何的一种几何公理系统里面，两条平行线是有可能相交的。所以是否相交，在于你看待的态度。"},{"user":{"locationInfo":null,"vipType":0,"nickname":"ShawnJi","userType":0,"vipRights":null,"userId":42323657,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/XzVUK8xlRkNZ3iFrLnNlhA==/109951163559542528.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":null,"repliedMark":false,"liked":false,"commentId":23630032,"likedCount":4145,"expressionUrl":null,"time":1435229901805,"content":"没有人觉得2分17秒到后面那一段像是手机卡住重复那一段么？"},{"user":{"locationInfo":null,"vipType":0,"nickname":"Miyoku","userType":0,"vipRights":null,"userId":60601637,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/MRz2xQMLS0DL5Ta1NdSUzw==/109951163974822231.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"三石三十","userType":0,"vipRights":null,"userId":39719526,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/mgNVb2EjfH5dBIr1Bqt7WQ==/7724069186016687.jpg","experts":null,"remarkName":null},"beRepliedCommentId":6927820,"content":"越听越难听[惶恐]","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":null,"repliedMark":false,"liked":false,"commentId":28471110,"likedCount":1770,"expressionUrl":null,"time":1438081917941,"content":"我怎么觉得越听越好听呢！"},{"user":{"locationInfo":null,"vipType":0,"nickname":"零小瑢","userType":4,"vipRights":null,"userId":290658615,"expertTags":null,"authStatus":1,"avatarUrl":"https://p3.music.126.net/439nwwPOvGpgcvycRFDUUw==/109951163215459535.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":null,"repliedMark":false,"liked":false,"commentId":261633809,"likedCount":1607,"expressionUrl":null,"time":1481200889346,"content":"我们生活在同一个地球，但是我们的纬度不同。你在北方望雪，我在南国踏青。我们身处不同的世界，你有你的冰清玉洁，我有我的馥郁芳香。你细嗅初雪，我踏碎晚霞。我们就像两条平行线，永远不会相交。可是，我们却朝着同一个方向前进。"},{"user":{"locationInfo":null,"vipType":0,"nickname":"承让了我的弟弟","userType":0,"vipRights":null,"userId":28855658,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/8Ge9tT3Q6xr0-BRpXB7WTQ==/109951163674711719.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":null,"repliedMark":false,"liked":false,"commentId":24687643,"likedCount":1132,"expressionUrl":null,"time":1435843831944,"content":"怎么感觉有 白鸽 的旋律？ "},{"user":{"locationInfo":null,"vipType":0,"nickname":"longtt","userType":0,"vipRights":null,"userId":141417,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/MS9Ll5sXyKjhJJNUadmr4Q==/5794426278405489.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":null,"repliedMark":false,"liked":false,"commentId":6928569,"likedCount":836,"expressionUrl":null,"time":1418210686492,"content":"在这冷雨的冬夜有这样的音乐感觉！开心！"},{"user":{"locationInfo":null,"vipType":0,"nickname":"gao宸养的猫","userType":0,"vipRights":null,"userId":100699316,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/LuSS3vdvOkn4CciWiW9G5A==/109951162915790260.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":null,"repliedMark":false,"liked":false,"commentId":378891823,"likedCount":596,"expressionUrl":null,"time":1494412550115,"content":"音乐这种东西最好不要强行分享给别人，每个人听歌时候状态不同，如果你强行塞给他很好的歌，其实还不如他在商场偶然听到这首歌有冲击感。如果你要强行给他听，他也永远觉得也就那样，一辈子也听不进去了。所以音乐这样的东西还是自己看的重就好了。"}]
+     * code : 200
+     * comments : [{"user":{"locationInfo":null,"vipType":0,"nickname":"一个沙雕雕","userType":0,"vipRights":null,"userId":445137519,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/EKyo6WLh4X3_av_zwTVi3A==/109951163985511410.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":{},"repliedMark":false,"liked":false,"commentId":1480131718,"likedCount":1,"expressionUrl":null,"time":1557060904906,"content":"这歌嗨中带点小忧郁，欢快中让我有点想哭，决定了 我葬礼上的播放曲目加一"},{"user":{"locationInfo":null,"vipType":11,"nickname":"月瀞","userType":0,"vipRights":{"associator":{"vipCode":100,"rights":true},"musicPackage":null,"redVipAnnualCount":-1},"userId":133740646,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/oNA1IiIRfW-inMQiG-K09g==/109951163765950193.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"C殿下","userType":0,"vipRights":null,"userId":35225121,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/QU4LccgHPvCErRb2wEGk8g==/6669637534568369.jpg","experts":null,"remarkName":null},"beRepliedCommentId":151436998,"content":"尼玛！你是男的啊！！是男的啊！！！！！！！","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":151436998,"decoration":{},"repliedMark":false,"liked":false,"commentId":1477975118,"likedCount":0,"expressionUrl":null,"time":1556991458904,"content":"两套房两辆车"},{"user":{"locationInfo":null,"vipType":0,"nickname":"墨染碑殇","userType":0,"vipRights":null,"userId":1372746264,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/yyLML8yc7ZSz3ej3INfCYA==/109951163713003361.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"ShawnJi","userType":0,"vipRights":null,"userId":42323657,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/XzVUK8xlRkNZ3iFrLnNlhA==/109951163559542528.jpg","experts":null,"remarkName":null},"beRepliedCommentId":23630032,"content":"没有人觉得2分17秒到后面那一段像是手机卡住重复那一段么？","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":23630032,"decoration":{},"repliedMark":false,"liked":false,"commentId":1477314952,"likedCount":0,"expressionUrl":null,"time":1556955885351,"content":"没错，你卡了"},{"user":{"locationInfo":null,"vipType":0,"nickname":"墨染碑殇","userType":0,"vipRights":null,"userId":1372746264,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/yyLML8yc7ZSz3ej3INfCYA==/109951163713003361.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"ShawnJi","userType":0,"vipRights":null,"userId":42323657,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/XzVUK8xlRkNZ3iFrLnNlhA==/109951163559542528.jpg","experts":null,"remarkName":null},"beRepliedCommentId":23630032,"content":"没有人觉得2分17秒到后面那一段像是手机卡住重复那一段么？","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":23630032,"decoration":{},"repliedMark":false,"liked":false,"commentId":1477305069,"likedCount":0,"expressionUrl":null,"time":1556955872448,"content":"是的"},{"user":{"locationInfo":null,"vipType":0,"nickname":"墨染碑殇","userType":0,"vipRights":null,"userId":1372746264,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/yyLML8yc7ZSz3ej3INfCYA==/109951163713003361.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"前路看近行远","userType":0,"vipRights":null,"userId":43113593,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/SkztKLw-CGUI1Lcz0lP3KA==/109951163706744411.jpg","experts":null,"remarkName":null},"beRepliedCommentId":135554736,"content":"我怎么遇上了一群当面说我的歌真难听，却背后偷偷在我电脑上找歌名的室友。。。。。。","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":135554736,"decoration":{},"repliedMark":false,"liked":false,"commentId":1477304025,"likedCount":0,"expressionUrl":null,"time":1556955770010,"content":"傲娇嘛担待点吧"},{"user":{"locationInfo":null,"vipType":0,"nickname":"墨染碑殇","userType":0,"vipRights":null,"userId":1372746264,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/yyLML8yc7ZSz3ej3INfCYA==/109951163713003361.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"ahlww","userType":0,"vipRights":null,"userId":278593407,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/q0yuMC011VL-TYoMLPYJUA==/18833534674193289.jpg","experts":null,"remarkName":null},"beRepliedCommentId":1349674793,"content":"你不会还在喜欢女人吧.jpg","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":151436998,"decoration":{},"repliedMark":false,"liked":false,"commentId":1477325842,"likedCount":0,"expressionUrl":null,"time":1556955718047,"content":"一九年了你不会还在喜欢女人吧？"},{"user":{"locationInfo":null,"vipType":0,"nickname":"墨染碑殇","userType":0,"vipRights":null,"userId":1372746264,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/yyLML8yc7ZSz3ej3INfCYA==/109951163713003361.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"C殿下","userType":0,"vipRights":null,"userId":35225121,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/QU4LccgHPvCErRb2wEGk8g==/6669637534568369.jpg","experts":null,"remarkName":null},"beRepliedCommentId":151436998,"content":"尼玛！你是男的啊！！是男的啊！！！！！！！","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":151436998,"decoration":{},"repliedMark":false,"liked":false,"commentId":1477297159,"likedCount":0,"expressionUrl":null,"time":1556955683328,"content":"有什么问题吗？"},{"user":{"locationInfo":null,"vipType":0,"nickname":"選擇時","userType":0,"vipRights":null,"userId":548748621,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/Br8OwqUtuYG4-V0B_k363w==/109951163296845035.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"Migg丶夏娜","userType":0,"vipRights":null,"userId":623977376,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/BW97EuoGz0NRy1iZauBcpw==/109951163132955316.jpg","experts":null,"remarkName":null},"beRepliedCommentId":1462573150,"content":"网易云告诉我们，你不是一个人在听音乐。有没有发现，在电子音乐这个圈子里面的人都是温文尔雅的，理智冷静且有内涵的。没有狂热追星的病态也没有相互攻击和摸黑，更多的是对艺人的称赞和对音乐发自内心的感想。电子音乐更像是艺术品，只有懂的人才会去欣赏。","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":1462573150,"decoration":{},"repliedMark":false,"liked":false,"commentId":1477158468,"likedCount":0,"expressionUrl":null,"time":1556948684440,"content":"必须给你一个赞，"},{"user":{"locationInfo":null,"vipType":11,"nickname":"ZZZZZZZhL-","userType":0,"vipRights":{"associator":{"vipCode":100,"rights":true},"musicPackage":null,"redVipAnnualCount":-1},"userId":475917049,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/PXxeMl07cqoTOe-LQgdTiQ==/109951163565309179.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":{},"repliedMark":false,"liked":false,"commentId":1477178694,"likedCount":0,"expressionUrl":null,"time":1556947347641,"content":"听着有一种熟悉感"},{"user":{"locationInfo":null,"vipType":11,"nickname":"EirAon","userType":0,"vipRights":{"associator":{"vipCode":100,"rights":true},"musicPackage":null,"redVipAnnualCount":-1},"userId":371116560,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/ylLnAQcjllew_HhtEFLsyw==/109951163817973047.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"l随_","userType":0,"vipRights":null,"userId":439978736,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/uqgrGjMTxZiPtoToFQV4Ow==/109951163414360220.jpg","experts":null,"remarkName":null},"beRepliedCommentId":1476907759,"content":"这是唯一一首听了想哭的歌，我也不知道为什么","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":1476907759,"decoration":{},"repliedMark":false,"liked":false,"commentId":1476902312,"likedCount":0,"expressionUrl":null,"time":1556933424440,"content":"你好同城"},{"user":{"locationInfo":null,"vipType":0,"nickname":"l随_","userType":0,"vipRights":null,"userId":439978736,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/uqgrGjMTxZiPtoToFQV4Ow==/109951163414360220.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":{},"repliedMark":false,"liked":false,"commentId":1476907759,"likedCount":1,"expressionUrl":null,"time":1556931121676,"content":"这是唯一一首听了想哭的歌，我也不知道为什么"},{"user":{"locationInfo":null,"vipType":0,"nickname":"雎梓熙","userType":0,"vipRights":null,"userId":423841412,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/8z96BudNWD5vF6IDxZc-Ig==/109951163436839147.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":10,"nickname":"兮秀w","userType":0,"vipRights":{"associator":null,"musicPackage":{"vipCode":220,"rights":true},"redVipAnnualCount":-1},"userId":1417185564,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/qMMlsj7uCU7mX10906jmjg==/109951164013628976.jpg","experts":null,"remarkName":null},"beRepliedCommentId":1476435275,"content":"春天来了","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":1476049172,"decoration":{},"repliedMark":false,"liked":false,"commentId":1476546303,"likedCount":0,"expressionUrl":null,"time":1556894683693,"content":"感谢(❁´ω`❁)"},{"user":{"locationInfo":null,"vipType":10,"nickname":"兮秀w","userType":0,"vipRights":{"associator":null,"musicPackage":{"vipCode":220,"rights":true},"redVipAnnualCount":-1},"userId":1417185564,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/qMMlsj7uCU7mX10906jmjg==/109951164013628976.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"雎梓熙","userType":0,"vipRights":null,"userId":423841412,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/8z96BudNWD5vF6IDxZc-Ig==/109951163436839147.jpg","experts":null,"remarkName":null},"beRepliedCommentId":1476049172,"content":"想知道中文歌名","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":1476049172,"decoration":{},"repliedMark":false,"liked":false,"commentId":1476435275,"likedCount":0,"expressionUrl":null,"time":1556890176229,"content":"春天来了"},{"user":{"locationInfo":null,"vipType":0,"nickname":"雎梓熙","userType":0,"vipRights":null,"userId":423841412,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/8z96BudNWD5vF6IDxZc-Ig==/109951163436839147.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":{},"repliedMark":false,"liked":false,"commentId":1476049172,"likedCount":0,"expressionUrl":null,"time":1556869519859,"content":"想知道中文歌名"},{"user":{"locationInfo":null,"vipType":0,"nickname":"红颜仪笑","userType":0,"vipRights":null,"userId":1685074830,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/f4hBX_JH0RG07RJUyhUYZg==/109951163820335125.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":{},"repliedMark":false,"liked":false,"commentId":1475853272,"likedCount":0,"expressionUrl":null,"time":1556859198027,"content":"幸好我听过了前17秒"},{"user":{"locationInfo":null,"vipType":0,"nickname":"再没人管我的闲","userType":0,"vipRights":null,"userId":1444101750,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/sJaeB0Ibmuvb676YU4Ux-Q==/109951164014288676.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"小小圈子","userType":0,"vipRights":null,"userId":50384246,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/3puPQMJbWulhPa_Xaiknow==/18952281928094035.jpg","experts":null,"remarkName":null},"beRepliedCommentId":1343977624,"content":"好有画面感\n一群小傲娇的室友[多多大笑]","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":135554736,"decoration":{},"repliedMark":false,"liked":false,"commentId":1475885784,"likedCount":0,"expressionUrl":null,"time":1556859129580,"content":"很棒"},{"user":{"locationInfo":null,"vipType":0,"nickname":"大桶子的小粉丝","userType":0,"vipRights":null,"userId":1305868754,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/VnZiScyynLG7atLIZ2YPkw==/18686200114669622.jpg","experts":null,"remarkName":null},"beReplied":[],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":0,"decoration":{},"repliedMark":false,"liked":false,"commentId":1475711519,"likedCount":1,"expressionUrl":null,"time":1556848972632,"content":"妈我要换手机你看我听个音乐都卡带[多多笑哭][多多笑哭]"},{"user":{"locationInfo":null,"vipType":0,"nickname":"流烟随微风","userType":0,"vipRights":null,"userId":435568875,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/FMkg2IBOBRDzUHucabi6kw==/109951163636403196.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"前路看近行远","userType":0,"vipRights":null,"userId":43113593,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/SkztKLw-CGUI1Lcz0lP3KA==/109951163706744411.jpg","experts":null,"remarkName":null},"beRepliedCommentId":135554736,"content":"我怎么遇上了一群当面说我的歌真难听，却背后偷偷在我电脑上找歌名的室友。。。。。。","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":135554736,"decoration":{},"repliedMark":false,"liked":false,"commentId":1475022945,"likedCount":0,"expressionUrl":null,"time":1556795565618,"content":"怕你一个人把逼全装了"},{"user":{"locationInfo":null,"vipType":0,"nickname":"霜天_晓角","userType":0,"vipRights":null,"userId":1500220226,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/BqGr_rkEyXVRO17KBv4AvA==/109951164011725289.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"不陈不冠希丶","userType":0,"vipRights":null,"userId":40596775,"expertTags":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/NkX_mKmYLgTSfHtuEcdP7w==/109951163409710004.jpg","experts":null,"remarkName":null},"beRepliedCommentId":30782208,"content":"然后有个光头来骚扰他们了","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":30782208,"decoration":{},"repliedMark":false,"liked":false,"commentId":1474826129,"likedCount":0,"expressionUrl":null,"time":1556784536485,"content":"还有一只猫头鹰"},{"user":{"locationInfo":null,"vipType":0,"nickname":"B站驻云村大使","userType":0,"vipRights":null,"userId":571658864,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/h77GoWs_sa0bvaGx4zVznw==/109951164039336933.jpg","experts":null,"remarkName":null},"beReplied":[{"user":{"locationInfo":null,"vipType":0,"nickname":"故里34","userType":0,"vipRights":null,"userId":1519086717,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/7t7hFq4Giltm5moe71hBUQ==/109951164038440837.jpg","experts":null,"remarkName":null},"beRepliedCommentId":1473162959,"content":"真不明白活着是为了什么","status":0,"expressionUrl":null}],"pendantData":null,"showFloorComment":null,"status":0,"commentLocationType":0,"parentCommentId":1473162959,"decoration":{},"repliedMark":false,"liked":false,"commentId":1474618464,"likedCount":0,"expressionUrl":null,"time":1556773251013,"content":"珍爱自己的生命，我们可以活的很精彩[多多大笑][多多大笑][多多大笑]"}]
+     * total : 13003
+     * more : true
+     */
+
+    var isIsMusician: Boolean = false
     var userId: Int = 0
-    var isMoreHot: Boolean = false
+    var moreHot: Boolean = false
     var code: Int = 0
     var total: Int = 0
-    var isMore: Boolean = false
+    var more: Boolean = false
     var topComments: List<*>? = null
     var hotComments: List<HotCommentsBean>? = null
-    var comments: List<CommentsBean>? = null
+    var comments: List<HotCommentsBean>? = null
 
     class HotCommentsBean {
         /**
-         * user : {"locationInfo":null,"vipRights":null,"userType":0,"nickname":"Meditated","vipType":0,"remarkName":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/qdFPqkFq9chOXmoyS9qDag==/18806046883229134.jpg","experts":null,"userId":269793261,"expertTags":null}
-         * beReplied : []
+         * user : {"locationInfo":null,"vipType":0,"nickname":"不陈不冠希丶","userType":0,"vipRights":null,"userId":40596775,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/NkX_mKmYLgTSfHtuEcdP7w==/109951163409710004.jpg","experts":null,"remarkName":null}
+         * beReplied : [{"user":{"locationInfo":null,"vipType":0,"nickname":"DaphneOdera","userType":0,"vipRights":null,"userId":38192684,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/0ZCGMKLU0CaIzQ6RGhyjog==/3249056860520639.jpg","experts":null,"remarkName":null},"beRepliedCommentId":17891101,"content":"春天里，两只小熊在山坡上滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去。。。~\\(≧▽≦)/~","status":0,"expressionUrl":null}]
          * pendantData : null
          * showFloorComment : null
          * status : 0
@@ -25,12 +34,12 @@ class MusicCommentDataBean {
          * parentCommentId : 0
          * decoration : null
          * repliedMark : false
-         * expressionUrl : null
-         * commentId : 466241119
          * liked : false
-         * time : 1499605318671
-         * likedCount : 1157
-         * content : 大街上，有个小男孩吵着要买棉花糖。妈妈指着他手里的小糖人，说：“刚买的孙悟空还没吃呢，怎么还要？”小男孩不听，赖在原地，非要买棉花糖不可。妈妈没办法，只好同意了。小男孩终于拿到了棉花糖，开心地对小糖人说：“大圣你看，你的筋斗云来了！”
+         * commentId : 30782208
+         * likedCount : 30822
+         * expressionUrl : null
+         * time : 1439372569360
+         * content : 然后有个光头来骚扰他们了
          */
 
         var user: UserBean? = null
@@ -41,108 +50,84 @@ class MusicCommentDataBean {
         var parentCommentId: Int = 0
         var decoration: Any? = null
         var isRepliedMark: Boolean = false
-        var expressionUrl: Any? = null
+        var liked: Boolean = false
         var commentId: Int = 0
-        var isLiked: Boolean = false
-        var time: Long = 0
         var likedCount: Int = 0
+        var expressionUrl: Any? = null
+        var time: Long = 0
         var content: String? = null
-        var beReplied: List<*>? = null
+        var beReplied: List<BeRepliedBean>? = null
 
         class UserBean {
             /**
              * locationInfo : null
-             * vipRights : null
-             * userType : 0
-             * nickname : Meditated
              * vipType : 0
-             * remarkName : null
-             * authStatus : 0
-             * avatarUrl : https://p4.music.126.net/qdFPqkFq9chOXmoyS9qDag==/18806046883229134.jpg
-             * experts : null
-             * userId : 269793261
+             * nickname : 不陈不冠希丶
+             * userType : 0
+             * vipRights : null
+             * userId : 40596775
              * expertTags : null
+             * authStatus : 0
+             * avatarUrl : https://p4.music.126.net/NkX_mKmYLgTSfHtuEcdP7w==/109951163409710004.jpg
+             * experts : null
+             * remarkName : null
              */
 
             var locationInfo: Any? = null
-            var vipRights: Any? = null
-            var userType: Int = 0
-            var nickname: String? = null
             var vipType: Int = 0
-            var remarkName: Any? = null
+            var nickname: String? = null
+            var userType: Int = 0
+            var vipRights: Any? = null
+            var userId: Int = 0
+            var expertTags: Any? = null
             var authStatus: Int = 0
             var avatarUrl: String? = null
             var experts: Any? = null
-            var userId: Int = 0
-            var expertTags: Any? = null
+            var remarkName: Any? = null
         }
-    }
 
-    class CommentsBean {
-        /**
-         * user : {"locationInfo":null,"vipRights":null,"userType":0,"nickname":"丿氧气丶是你","vipType":0,"remarkName":null,"authStatus":0,"avatarUrl":"https://p3.music.126.net/QYQOGPYtjhH4zWxhpgTigA==/1404076355495807.jpg","experts":null,"userId":266118609,"expertTags":null}
-         * beReplied : []
-         * pendantData : null
-         * showFloorComment : null
-         * status : 0
-         * commentLocationType : 0
-         * parentCommentId : 0
-         * decoration : {}
-         * repliedMark : false
-         * expressionUrl : null
-         * commentId : 1475328908
-         * liked : false
-         * time : 1556809589092
-         * likedCount : 0
-         * content : 以前学校里大喇叭天天放这个版本。
-         * isRemoveHotComment : false
-         */
-
-        var user: UserBean? = null
-        var pendantData: Any? = null
-        var showFloorComment: Any? = null
-        var status: Int = 0
-        var commentLocationType: Int = 0
-        var parentCommentId: Int = 0
-        var decoration: DecorationBean? = null
-        var isRepliedMark: Boolean = false
-        var expressionUrl: Any? = null
-        var commentId: Int = 0
-        var isLiked: Boolean = false
-        var time: Long = 0
-        var likedCount: Int = 0
-        var content: String? = null
-        var isIsRemoveHotComment: Boolean = false
-        var beReplied: List<*>? = null
-
-        class UserBean {
+        class BeRepliedBean {
             /**
-             * locationInfo : null
-             * vipRights : null
-             * userType : 0
-             * nickname : Meditated
-             * vipType : 0
-             * remarkName : null
-             * authStatus : 0
-             * avatarUrl : https://p4.music.126.net/qdFPqkFq9chOXmoyS9qDag==/18806046883229134.jpg
-             * experts : null
-             * userId : 269793261
-             * expertTags : null
+             * user : {"locationInfo":null,"vipType":0,"nickname":"DaphneOdera","userType":0,"vipRights":null,"userId":38192684,"expertTags":null,"authStatus":0,"avatarUrl":"https://p4.music.126.net/0ZCGMKLU0CaIzQ6RGhyjog==/3249056860520639.jpg","experts":null,"remarkName":null}
+             * beRepliedCommentId : 17891101
+             * content : 春天里，两只小熊在山坡上滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去，滚来滚去。。。~\(≧▽≦)/~
+             * status : 0
+             * expressionUrl : null
              */
 
-            var locationInfo: Any? = null
-            var vipRights: Any? = null
-            var userType: Int = 0
-            var nickname: String? = null
-            var vipType: Int = 0
-            var remarkName: Any? = null
-            var authStatus: Int = 0
-            var avatarUrl: String? = null
-            var experts: Any? = null
-            var userId: Int = 0
-            var expertTags: Any? = null
-        }
+            var user: UserBeanX? = null
+            var beRepliedCommentId: Int = 0
+            var content: String? = null
+            var status: Int = 0
+            var expressionUrl: Any? = null
 
-        class DecorationBean
+            class UserBeanX {
+                /**
+                 * locationInfo : null
+                 * vipType : 0
+                 * nickname : DaphneOdera
+                 * userType : 0
+                 * vipRights : null
+                 * userId : 38192684
+                 * expertTags : null
+                 * authStatus : 0
+                 * avatarUrl : https://p4.music.126.net/0ZCGMKLU0CaIzQ6RGhyjog==/3249056860520639.jpg
+                 * experts : null
+                 * remarkName : null
+                 */
+
+                var locationInfo: Any? = null
+                var vipType: Int = 0
+                var nickname: String? = null
+                var userType: Int = 0
+                var vipRights: Any? = null
+                var userId: Int = 0
+                var expertTags: Any? = null
+                var authStatus: Int = 0
+                var avatarUrl: String? = null
+                var experts: Any? = null
+                var remarkName: Any? = null
+            }
+        }
     }
 }

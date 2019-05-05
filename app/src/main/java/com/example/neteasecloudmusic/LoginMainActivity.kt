@@ -28,9 +28,7 @@ class LoginMainActivity : AppCompatActivity() {
                         when (status) {
                             Status.OK -> {
                                 Toast.makeText(this, "Welcome!${data!!.profile?.nickname}", Toast.LENGTH_SHORT).show()
-                                val share = getSharedPreferences("data", Context.MODE_PRIVATE)
                                 SharedCenter.updateUserInfo(
-                                    share,
                                     data,
                                     phoneNumEDT.text.toString(),
                                     pwdEDT.text.toString()

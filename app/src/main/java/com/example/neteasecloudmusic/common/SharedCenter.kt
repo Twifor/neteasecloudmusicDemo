@@ -1,12 +1,13 @@
 package com.example.neteasecloudmusic.common
 
+import android.content.Context
 import android.content.SharedPreferences
 import com.example.neteasecloudmusic.network.login.LoginDataBean
 import com.example.neteasecloudmusic.network.login.UserDetailBean
-import kotlinx.android.synthetic.main.loginmain.*
 
 object SharedCenter {
-    fun updateUserInfo(s: SharedPreferences, i: LoginDataBean, ph: String, pwd: String) {
+    private val s = CommonUtil.context.getSharedPreferences("data", Context.MODE_PRIVATE)
+    fun updateUserInfo(i: LoginDataBean, ph: String?, pwd: String?) {
         s.edit()
             .putString("avatar_url", i.profile?.avatarUrl)
             .putString("nickname", i.profile?.nickname)
@@ -19,9 +20,25 @@ object SharedCenter {
             .putString("background_url", i.profile?.backgroundUrl).apply()
     }
 
-    fun updateUserDetail(s: SharedPreferences, d: UserDetailBean?) {
+    fun getPhoneNUm(): String? {
+        return s.getString("phoneNum", null)
+    }
+
+    fun getPassWord(): String? {
+        return s.getString("pwd", null)
+    }
+
+    fun updateUserDetail(d: UserDetailBean?) {
         s.edit()
             .putInt("level", d?.level ?: 0)
             .apply()
+    }
+
+    fun saveCookieID(cookie: String?) {
+        s.edit().putString("cookieID", cookie).apply()
+    }
+
+    fun getCookieID(): String? {
+        return s.getString("cookieID", null)
     }
 }

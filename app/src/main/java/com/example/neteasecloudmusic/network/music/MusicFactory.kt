@@ -47,8 +47,8 @@ object MusicFactory {
         }.start()
     }
 
-    fun getComment(id: Int?, limit: Int?, back: (Status, MusicCommentDataBean?) -> (Unit)) {
-        val call = MainService.getMusicComment(id, limit)
+    fun getComment(id: Int?, limit: Int?, timestamp: Long?, back: (Status, MusicCommentDataBean?) -> (Unit)) {
+        val call = MainService.getMusicComment(id, limit, timestamp)
         object : Thread() {
             override fun run() {
                 try {
@@ -62,11 +62,11 @@ object MusicFactory {
         }.start()
     }
 
-    fun likeComment(id: Int?, cid: Int?, t: Int?, type: Int?, back: (Status) -> (Unit)) {
+    fun likeComment(id: Int?, cid: Int?, t: Int?, type: Int?, timestamp: Long?, back: (Status) -> (Unit)) {
         object : Thread() {
             override fun run() {
                 try {
-                    MainService.likeComment(id, cid, t, type).execute()
+                    MainService.likeComment(id, cid, t, type, timestamp).execute()
                     back(Status.OK)
                 } catch (e: Exception) {
                     back(Status.INV)
