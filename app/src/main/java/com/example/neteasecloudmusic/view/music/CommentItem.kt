@@ -44,6 +44,7 @@ class CommentItem(
             holder.userName.text = item.user
             holder.time.text = SimpleDateFormat("yyyy年MM月dd日").format(item.t)
             try {
+                holder.replayText.visibility = View.VISIBLE
                 holder.replayText.text = "@${item.beReplied?.get(0)?.user?.nickname}:${item.beReplied?.get(0)?.content}"
             } catch (e: Exception) {
                 holder.replayText.visibility = View.GONE

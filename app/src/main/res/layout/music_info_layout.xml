@@ -27,6 +27,9 @@
             android:textColor="@color/white"
             android:textSize="18sp"
             android:text="adasaddawdawdswas"
+            android:maxEms="13"
+            android:maxLines="1"
+            android:ellipsize="end"
             app:layout_constraintStart_toEndOf="@id/rank"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginStart="12dp" android:layout_marginTop="8dp"/>

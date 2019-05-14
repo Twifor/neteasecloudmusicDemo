@@ -28,7 +28,13 @@
                   android:theme="@style/NormalTheme"></activity>
         <activity android:name=".MusicPlayActivity"></activity>
         <activity android:name=".CommentActivity"
+                  android:theme="@style/NormalTheme"
+                  android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <activity android:name=".SearchActivity"
                   android:theme="@style/NormalTheme"></activity>
+        <service android:name=".common.MusicService"
+                 android:enabled="true"
+                 android:exported="true"></service>
     </application>
 
 </manifest>

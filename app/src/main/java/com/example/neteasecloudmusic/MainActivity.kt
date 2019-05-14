@@ -70,6 +70,9 @@ class MainActivity : AppCompatActivity() {
         menu_btn.setOnClickListener {
             makePopupWindow()
         }
+        search.setOnClickListener {
+            startActivity<SearchActivity>()
+        }
         UserDetailFactory.getUserDetail(share?.getInt("id", 0)) { status, data ->
             when (status) {
                 Status.UNK -> Toast.makeText(this, "Get detail error", Toast.LENGTH_SHORT).show()

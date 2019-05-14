@@ -24,6 +24,7 @@ class MusicItem(var c: Context, var id: Int, var title: String?, var info: Strin
     Item {
     var isOK: Boolean = false
     var msg: String = "BUG!!"
+    var isSolved: Boolean = false
 
     companion object Controller : ItemController {
         override fun onBindViewHolder(holder: RecyclerView.ViewHolder, item: Item) {
@@ -31,11 +32,15 @@ class MusicItem(var c: Context, var id: Int, var title: String?, var info: Strin
             item as MusicItem
             holder.rank.text = item.rk.toString()
             holder.info.text = item.info
-            holder.title.text = if (item.title?.length!! < 25) item.title else item.title?.substring(0, 25) + "..."
+            holder.title.text = item.title
+            if (item.isSolved) return
+            item.isSolved = true
             MusicFactory.getMusicCheck(item.id) { b ->
                 item.c.runOnUiThread {
-                    if (!b) item.msg = "NetWork Error or No CopyRight."
-                    else item.isOK = true
+                    if (!b) {
+                        item.msg = "NetWork Error or No CopyRight."
+                        item.isOK = false
+                    } else item.isOK = true
                     if (!item.isOK) holder.title.setTextColor(item.c.resources.getColor(R.color.dark_white))
                     else holder.title.setTextColor(item.c.resources.getColor(R.color.white))
                 }

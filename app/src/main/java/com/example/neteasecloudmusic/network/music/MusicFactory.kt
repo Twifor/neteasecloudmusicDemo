@@ -74,4 +74,32 @@ object MusicFactory {
             }
         }.start()
     }
+
+    fun comment(t: Int?, type: Int?, id: Int?, content: String?, back: (Status) -> (Unit)) {
+        object : Thread() {
+            override fun run() {
+                try {
+                    MainService.comment(t, type, id, content).execute()
+                    back(Status.OK)
+                } catch (e: Exception) {
+                    back(Status.INV)
+                }
+            }
+        }.start()
+    }
+
+    fun search(keyword: String?, back: (Status, SearchDataBean?) -> (Unit)) {
+        val call = MainService.getSearchData(keyword, 30, 1)
+        object : Thread() {
+            override fun run() {
+                try {
+                    val searchDataBean = call.execute().body()
+                    if (searchDataBean == null) back(Status.NETERR, null)
+                    else back(Status.OK, searchDataBean)
+                } catch (e: Exception) {
+                    back(Status.NETERR, null)
+                }
+            }
+        }.start()
+    }
 }

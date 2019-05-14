@@ -4,10 +4,7 @@ import com.example.neteasecloudmusic.network.login.LoginDataBean
 import com.example.neteasecloudmusic.network.login.UserDetailBean
 import com.example.neteasecloudmusic.network.mixs.MixDataBean
 import com.example.neteasecloudmusic.network.mixs.MixDetailBean
-import com.example.neteasecloudmusic.network.music.MusicCheckDataBean
-import com.example.neteasecloudmusic.network.music.MusicCommentDataBean
-import com.example.neteasecloudmusic.network.music.MusicDetailBean
-import com.example.neteasecloudmusic.network.music.MusicUrlBean
+import com.example.neteasecloudmusic.network.music.*
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.GET
@@ -50,6 +47,12 @@ interface MainService {
             "timestamp"
         ) timestamp: Long?
     ): Call<Unit>
+
+    @GET("/comment?")
+    fun comment(@Query("t") t: Int?, @Query("type") type: Int?, @Query("id") id: Int?, @Query("content") content: String?): Call<Unit>
+
+    @GET("/search?")
+    fun getSearchData(@Query("keywords") keywords: String?, @Query("limit") limit: Int?, @Query("type") type: Int?): Call<SearchDataBean>
 
     companion object : MainService by ServiceFactory()
 }
